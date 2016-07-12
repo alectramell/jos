@@ -1,0 +1,7 @@
+# Using "convert" and "ffmpeg" commands..
+
+	$ ffmpeg -i BACKGROUND.png -i WATERMARK.png -filter_complex "overlay=00:00" OUTPUT.png
+
+..you can create an animated GIF file with a watermark, starting with creating an animated GIF background, as so..
+
+	$ convert -delay 20 -loop 0 LAYER1.png LAYER2.png LAYER3.png OUTPUT.gif
